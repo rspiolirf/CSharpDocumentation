@@ -19,6 +19,10 @@ namespace EnumsAndFlags
             Console.WriteLine(spring);
             Console.WriteLine(startingOnEquinox);
             Console.WriteLine(thisYear);
+
+            Console.WriteLine($"Has Spring: {thisYear.HasFlag(Seasons.Spring)}");
+            Console.WriteLine($"StartingOnEquinox has Winter: {startingOnEquinox.HasFlag(Seasons.Winter)}");
+            Console.WriteLine($"StartingOnEquinox has Autumn: {startingOnEquinox.HasFlag(Seasons.Autumn)}");
         }
     }
 }
